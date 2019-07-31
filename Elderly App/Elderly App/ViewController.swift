@@ -16,24 +16,12 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         GIDSignIn.sharedInstance().uiDelegate = self
-        NotificationCenter.default.addObserver(self, selector: #selector(didSignIn), name: NSNotification.Name("SuccessfulSignInNotification"), object: nil)
-        
-        
     }
+    
 
-    @objc func didSignIn()  {
-        // Add your code here to push the new view controller
-        // navigationController?.pushViewController(BrowserViewController(), animated: true)
-        self.performSegue(withIdentifier: "callSegue", sender: nil)
-        return
-    }
     
-    deinit {
-        NotificationCenter.default.removeObserver(self)
-    }
-    
-    @IBAction func nextPage(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "callSegue", sender: nil)
-    }
+    //@IBAction func nextPage(_ sender: UIButton) {
+    //    self.performSegue(withIdentifier: "callSegue", sender: nil)
+    //}
     
 }

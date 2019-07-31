@@ -40,8 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate  {
             let familyName = user.profile.familyName
             let email = user.profile.email
             // Switch to a different screen
-            NotificationCenter.default.post(
-                name: Notification.Name("SuccessfulSignInNotification"), object: nil, userInfo: nil)
+            self.window?.rootViewController!.performSegue(withIdentifier: "callSegue", sender: nil)
         }
     }
     
