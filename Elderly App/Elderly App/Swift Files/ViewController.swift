@@ -12,6 +12,7 @@ import GoogleSignIn
 class ViewController: UIViewController, GIDSignInUIDelegate {
 
     @IBOutlet weak var button: GIDSignInButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -23,5 +24,8 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
     //@IBAction func nextPage(_ sender: UIButton) {
     //    self.performSegue(withIdentifier: "callSegue", sender: nil)
     //}
+    @IBAction func nextBtn(_ sender: Any) {
+        self.performSegue(withIdentifier: "callSegue", sender: nil)
+    }
     
 }
