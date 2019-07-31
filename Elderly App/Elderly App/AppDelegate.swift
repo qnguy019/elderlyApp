@@ -40,6 +40,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate  {
             let familyName = user.profile.familyName
             let email = user.profile.email
             // Switch to a different screen
+            //Ref to switch view: https://stackoverflow.com/questions/46278116/swift-3-attempt-to-present-whose-view-is-not-in-the-window-hierarchy
+            let initialViewController = UIStoryboard(name: "Main", bundle:nil).instantiateInitialViewController() as! UIViewController
+            let appDelegate = (UIApplication.shared.delegate as! AppDelegate)
+            appDelegate.window?.rootViewController = initialViewController
+            //Ref to segue in app delegate: https://stackoverflow.com/a/53513022
             self.window?.rootViewController!.performSegue(withIdentifier: "callSegue", sender: nil)
         }
     }
