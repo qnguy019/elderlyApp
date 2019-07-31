@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--callRef-->
+        <scene sceneID="xvX-LE-QXO">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Call" referencedIdentifier="callRef" id="o5A-vB-Q2C" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="566-pl-YJl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1066" y="-236"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Elderly_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMK-LR-Lx2">
+                                <rect key="frame" x="45" y="408" width="285" height="69"/>
+                                <state key="normal" title="sign up" backgroundImage="Email"/>
+                                <connections>
+                                    <action selector="nextPage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7jj-PI-c1E"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FIND MY  ELDERLY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8M-66-XAa">
+                                <rect key="frame" x="152.5" y="89" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ELDERLY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gP4-m4-pxX">
+                                <rect key="frame" x="131" y="118" width="113" height="33"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXd-jB-vMt" customClass="GIDSignInButton">
+                                <rect key="frame" x="45" y="318" width="285" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="u51-Mc-aFz"/>
+                                </constraints>
+                                <state key="normal" title="Login with Google" backgroundImage="Google"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rT8-gH-Kfh">
+                                <rect key="frame" x="45" y="485" width="285" height="69"/>
+                                <state key="normal" title="Login with Facebook" backgroundImage="FB">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Login and create an account " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SlK-gD-gvm">
+                                <rect key="frame" x="74" y="189" width="221" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rT8-gH-Kfh" firstAttribute="top" secondItem="TMK-LR-Lx2" secondAttribute="bottom" constant="8" id="AdJ-p7-Z1p"/>
+                            <constraint firstItem="TMK-LR-Lx2" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="CqD-Jy-amG"/>
+                            <constraint firstItem="rT8-gH-Kfh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Etq-IN-FO9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rT8-gH-Kfh" secondAttribute="bottom" constant="113" id="Gix-J9-TvA"/>
+                            <constraint firstItem="gP4-m4-pxX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="I8E-of-0dR"/>
+                            <constraint firstItem="TMK-LR-Lx2" firstAttribute="top" secondItem="pXd-jB-vMt" secondAttribute="bottom" constant="21" id="Iuq-JS-7tR"/>
+                            <constraint firstItem="h8M-66-XAa" firstAttribute="centerX" secondItem="gP4-m4-pxX" secondAttribute="centerX" id="Lpf-1p-X6i"/>
+                            <constraint firstItem="pXd-jB-vMt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ObG-c2-FhT"/>
+                            <constraint firstItem="SlK-gD-gvm" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="PUv-LO-0qO"/>
+                            <constraint firstItem="h8M-66-XAa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="69" id="UL7-Sb-VBE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SlK-gD-gvm" secondAttribute="bottom" constant="449" id="Xd7-4N-XHf"/>
+                            <constraint firstItem="TMK-LR-Lx2" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cXb-hq-MCs"/>
+                            <constraint firstItem="pXd-jB-vMt" firstAttribute="centerX" secondItem="h8M-66-XAa" secondAttribute="centerX" id="kMa-2T-0KV"/>
+                            <constraint firstItem="gP4-m4-pxX" firstAttribute="top" secondItem="h8M-66-XAa" secondAttribute="bottom" constant="8" symbolic="YES" id="pgQ-na-0F3"/>
+                            <constraint firstItem="pXd-jB-vMt" firstAttribute="leading" secondItem="rT8-gH-Kfh" secondAttribute="leading" id="x4k-qs-ltZ"/>
+                            <constraint firstItem="pXd-jB-vMt" firstAttribute="leading" secondItem="SlK-gD-gvm" secondAttribute="trailing" constant="-250" id="zbF-ER-vOu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="pXd-jB-vMt" id="uvy-IU-AsK"/>
+                        <segue destination="o5A-vB-Q2C" kind="show" identifier="callSegue" id="o6J-Ut-SCs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="63" y="130"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dGw-Pv-8xf">
+            <objects>
+                <viewController id="9q6-Rg-nJX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yiC-WS-1Sl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alO-xl-6gf">
+                                <rect key="frame" x="166" y="279" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="oMa-ac-GAo"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4RC-EG-Pto" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="146" y="899"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Email" width="285" height="69"/>
+        <image name="FB" width="285" height="69"/>
+        <image name="Google" width="285" height="69"/>
+    </resources>
+</document>
