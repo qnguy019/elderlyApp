@@ -18,14 +18,9 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         GIDSignIn.sharedInstance().uiDelegate = self
     }
-    
-
-    
-    //@IBAction func nextPage(_ sender: UIButton) {
-    //    self.performSegue(withIdentifier: "callSegue", sender: nil)
-    //}
-    @IBAction func nextBtn(_ sender: Any) {
-        self.performSegue(withIdentifier: "callSegue", sender: nil)
+    @IBAction func backHomeButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "homeSeg", sender: nil)
     }
+    
     
 }

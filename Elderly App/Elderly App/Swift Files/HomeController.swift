@@ -7,20 +7,19 @@
 //
 
 import UIKit
-
-class HomeController: UIViewController {
+import GoogleSignIn
+class HomeController: UIViewController, GIDSignInUIDelegate {
     
- //   @IBOutlet weak var callButton: CustomButton!
-    var bottomCustomButton = CustomButton()
-    
+ //   var bottomCustomButton = CustomButton()
+    @IBOutlet weak var button: GIDSignInButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupBottomButtonConstraints()
-        addActionToBottomButton()
-        bottomCustomButton.setTitle("Track", for: .normal)
+//        setupBottomButtonConstraints()
+//        addActionToBottomButton()
+//        bottomCustomButton.setTitle("Track", for: .normal)
         // Do any additional setup after loading the view.
     }
-    
+    /*
     func setupBottomButtonConstraints() {
         view.addSubview(bottomCustomButton)
         bottomCustomButton.translatesAutoresizingMaskIntoConstraints = false
@@ -33,14 +32,21 @@ class HomeController: UIViewController {
     func addActionToBottomButton() {
         bottomCustomButton.addTarget(self, action: #selector(bottomButtonTapped), for: .touchUpInside)
     }
+ 
     
     @objc func bottomButtonTapped() {
         bottomCustomButton.shake()
     }
-    
-    @IBAction func callButton(_ sender: CustomButton) {
-        print("hellow")
+     */
+    @IBAction func mainButton(_ sender: Any) {
+        GIDSignIn.sharedInstance().signOut()
+        self.performSegue(withIdentifier: "mainSeg", sender: nil)
+    }
+    @IBAction func callButton(_ sender: Any) {
         self.performSegue(withIdentifier: "callSeg", sender: nil)
+    }
+    @IBAction func mapPageButton(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "mapSeg", sender: nil)
     }
 }
 

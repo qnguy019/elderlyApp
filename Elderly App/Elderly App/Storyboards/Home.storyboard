@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,10 +15,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Home Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="homeRef" id="BYZ-38-t0r" customClass="ViewController" customModule="Elderly_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="homeRef" id="BYZ-38-t0r" customClass="HomeController" customModule="Elderly_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -47,6 +47,9 @@
                                 <state key="normal" title="&lt; go back">
                                     <color key="titleColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                 </state>
+                                <connections>
+                                    <action selector="mainButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tuu-gt-aE3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VLW-Zw-gVb" customClass="CustomButton" customModule="Elderly_App" customModuleProvider="target">
                                 <rect key="frame" x="116" y="395" width="180" height="50"/>
@@ -54,13 +57,17 @@
                                 <state key="normal" title="Call"/>
                                 <connections>
                                     <action selector="callButton:" destination="oPq-sf-Mlv" eventType="touchUpInside" id="Uek-rR-j7v"/>
+                                    <action selector="callButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hSm-fG-8JE"/>
                                     <action selector="callButtonTapped:" destination="oPq-sf-Mlv" eventType="touchUpInside" id="yb9-fn-SlO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAE-aW-w0F" customClass="CustomButton" customModule="Elderly_App" customModuleProvider="target">
-                                <rect key="frame" x="131" y="615" width="180" height="50"/>
+                                <rect key="frame" x="117" y="629" width="180" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Track"/>
+                                <connections>
+                                    <action selector="mapPageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wTF-KH-KB8"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -74,6 +81,8 @@
                     </view>
                     <connections>
                         <segue destination="B35-cO-2pb" kind="show" identifier="callSeg" id="WSM-sE-vZa"/>
+                        <segue destination="GL3-hl-VUL" kind="show" identifier="mapSeg" id="MNQ-Sx-fnI"/>
+                        <segue destination="B3V-7W-HT5" kind="show" identifier="mainSeg" id="akJ-ve-1UA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -88,6 +97,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zch-jZ-uvk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="994" y="-126"/>
+        </scene>
+        <!--mapRef-->
+        <scene sceneID="ugM-bU-2iA">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MapController" referencedIdentifier="mapRef" id="GL3-hl-VUL" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ttb-79-CGe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="967" y="-17"/>
+        </scene>
+        <!--mainRef-->
+        <scene sceneID="sVK-gR-EI8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="mainRef" id="B3V-7W-HT5" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pd7-2C-i8u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="775" y="166"/>
         </scene>
     </scenes>
     <resources>

@@ -11,6 +11,8 @@
 		416430FC22E8CA1E005C03F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 416430FA22E8CA1E005C03F2 /* Main.storyboard */; };
 		416430FE22E8CA1E005C03F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 416430FD22E8CA1E005C03F2 /* Assets.xcassets */; };
 		4164310122E8CA1E005C03F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 416430FF22E8CA1E005C03F2 /* LaunchScreen.storyboard */; };
+		41975FB322F25DBE00F6926A /* MapController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41975FB122F25DBE00F6926A /* MapController.storyboard */; };
+		41975FB722F25E1B00F6926A /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41975FB622F25E1B00F6926A /* mapViewController.swift */; };
 		CE09FD7222F2372D006BAB37 /* Call2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE09FD7122F2371D006BAB37 /* Call2Controller.swift */; };
 		CE09FD7422F23743006BAB37 /* Call2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE09FD7322F23743006BAB37 /* Call2.storyboard */; };
 		CE8C553E22F23E6900A1C54D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8C553D22F23E6900A1C54D /* AppDelegate.swift */; };
@@ -32,6 +34,8 @@
 		416430FD22E8CA1E005C03F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4164310022E8CA1E005C03F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4164310222E8CA1E005C03F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41975FB222F25DBE00F6926A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../../../elderlyproject/maptest2/maptest2/Base.lproj/MapController.storyboard; sourceTree = "<group>"; };
+		41975FB622F25E1B00F6926A /* mapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
 		81E52DF060CD32CF1B2A18F0 /* Pods_Elderly_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Elderly_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9384188DA431762B07A790C0 /* Pods-Elderly App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elderly App.debug.xcconfig"; path = "Target Support Files/Pods-Elderly App/Pods-Elderly App.debug.xcconfig"; sourceTree = "<group>"; };
 		CE09FD7122F2371D006BAB37 /* Call2Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Call2Controller.swift; sourceTree = "<group>"; };
@@ -108,6 +112,7 @@
 		CE8C554522F2402B00A1C54D /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				41975FB122F25DBE00F6926A /* MapController.storyboard */,
 				CE8C554322F2402200A1C54D /* Home.storyboard */,
 				CE09FD7322F23743006BAB37 /* Call2.storyboard */,
 				416430FA22E8CA1E005C03F2 /* Main.storyboard */,
@@ -119,6 +124,7 @@
 		CE8C554622F2404400A1C54D /* Swift Files */ = {
 			isa = PBXGroup;
 			children = (
+				41975FB622F25E1B00F6926A /* mapViewController.swift */,
 				CE8C554022F2400400A1C54D /* CustomButton.swift */,
 				CE8C553F22F2400400A1C54D /* HomeController.swift */,
 				CE8C553D22F23E6900A1C54D /* AppDelegate.swift */,
@@ -200,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE8C555022F2409C00A1C54D /* phone-call-png-hd-clipart-phone-icon-clipart-best-clipart-best-image-949-phone-png-800.imageset in Resources */,
+				41975FB322F25DBE00F6926A /* MapController.storyboard in Resources */,
 				CE8C554D22F2409C00A1C54D /* Current-Location-512.imageset in Resources */,
 				4164310122E8CA1E005C03F2 /* LaunchScreen.storyboard in Resources */,
 				CE8C554822F2406900A1C54D /* Salmon White - Personal Use.otf in Resources */,
@@ -277,6 +284,7 @@
 				CE8C554122F2400400A1C54D /* HomeController.swift in Sources */,
 				CE8C553E22F23E6900A1C54D /* AppDelegate.swift in Sources */,
 				CE09FD7222F2372D006BAB37 /* Call2Controller.swift in Sources */,
+				41975FB722F25E1B00F6926A /* mapViewController.swift in Sources */,
 				416430F922E8CA1E005C03F2 /* ViewController.swift in Sources */,
 				CE8C554222F2400400A1C54D /* CustomButton.swift in Sources */,
 			);
@@ -299,6 +307,14 @@
 				4164310022E8CA1E005C03F2 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		41975FB122F25DBE00F6926A /* MapController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41975FB222F25DBE00F6926A /* Base */,
+			);
+			name = MapController.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
